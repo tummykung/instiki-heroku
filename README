@@ -17,11 +17,11 @@ Note for Heroku read-only filesystem: file uploads are disabled by default.
 == 5 easy Steps to get the Instiki on Heroku experience
 
 #!/bin/bash
-git clone git://github.com/lazzarello/instiki-heroku.git
+git clone git://github.com/tummykung/instiki-heroku.git
 cd instiki-heroku
-heroku create
+heroku create --stack cedar
 git push heroku master
-heroku rake db:migrate
+heroku run rake db:migrate
 
 === If you are on Linux
 
@@ -33,9 +33,8 @@ Install git and heroku and follow the 5 step program.
 
 === If you are on Windows
 
-You may be screwed, but I don't know because I recommend running Debian
-GNU/Linux for everything except for entertaining yourself, for that I recommend
-MacOS X.
+I am also a Windows user, so perhaps you should be fine too.
+Send me some feedback if you run into some problems.
 
 === Backing up on Heroku.
 
@@ -127,6 +126,10 @@ the current version of Instiki.
 ---
 
 Authors::
+
+Version 1.0:: Tum Chaturapruek
+Email:: tum_chaturapruek[AT]hmc.edu
+Website:: http://www.linkgroup.hu/TumChaturapruek.php
 
 Versions 0.0 to 0.9.1:: David Heinemeier Hansson
 Email::  david[AT]loudthinking.com

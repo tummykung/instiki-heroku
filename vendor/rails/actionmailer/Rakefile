@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rdoc/task' (in RDoc 2.4.2+)
 require 'rake/packagetask'
 require 'rake/gempackagetask'
 require File.join(File.dirname(__FILE__), 'lib', 'action_mailer', 'version')

@@ -1,5 +1,5 @@
 # Rakefile for Rack.  -*-ruby-*-
-require 'rake/rdoctask'
+require 'rdoc/task' (in RDoc 2.4.2+)
 require 'rake/testtask'
 
 
