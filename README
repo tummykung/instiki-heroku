@@ -14,22 +14,25 @@ http://instiki.org/
 
 Note for Heroku read-only filesystem: file uploads are disabled by default.
 
-== 5 easy Steps to get the Instiki on Heroku experience
+== 8 easy Steps to get the Instiki on Heroku experience
 
 #!/bin/bash
 git clone git://github.com/tummykung/instiki-heroku.git
 cd instiki-heroku
+bundle install
+git add Gemfile.lock
+git commit -m "add Gemfile"
 heroku create --stack cedar
 git push heroku master
 heroku run rake db:migrate
 
 === If you are on Linux
 
-You are already rad, you got this. Follow the 5 step program
+You are already rad, you got this. Follow the 8 step program
 
 === If you are on Mac OSX
 
-Install git and heroku and follow the 5 step program.
+Install git and heroku and follow the 8 step program.
 
 === If you are on Windows
 
